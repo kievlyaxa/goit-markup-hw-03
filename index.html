@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Веб студия</title>
+        <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./css/normalize.css">
+        <title>Веб студия</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/styles-index.css">
     </head>
 <body>
     <!--шапка-->
-    <header>
-        <nav>
-            <a class="logo" href="./index.html"> 
-                <span class="logo-web" lang="en">Web</span> Studio
-            </a>
-            <ul class="site-nav">
-                <li><a class="site-nav-link current" href="./index.html">Студия</a></li>
-                <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="site-nav-link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-            <ul class="contacts">
-                <li class="contacts-list"><img src="./image/envelope(hover).svg" alt="конверт">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts-list"><img src="./image/smartphone.svg" alt="смартфон">
-                    <a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+    <header class="hat">
+        <div class="container">
+            <nav>
+                <a class="logo" href="./index.html"> 
+                    <span class="logo-web" lang="en">Web</span> Studio
+                </a>
+                <ul class="site-nav">
+                    <li><a class="site-nav-link current" href="./index.html">Студия</a></li>
+                    <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="site-nav-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+                <ul class="contacts">
+                    <li class="contacts-list"><img src="./image/envelope(hover).svg" alt="конверт">
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contacts-list"><img src="./image/smartphone.svg" alt="смартфон">
+                        <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+        </div>
     </header>
     <!--главный контент-->
     <main>
-        <section>
-            <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <a class="button" href="">Заказать услугу</a>       
+        <section class="hero">
+            <div class="container">
+                <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
+                <a class="button" href="">Заказать услугу</a>       
+            </div>
         </section>
         <!--секция 1 - наши особенности-->
         <section class="features">
-            <h2 class="features-title">Особенности</h2>
-            <ul>
-                <li><img src="./image/antenna1.svg" alt="антена"></li>
-                <li><h3 class="title">Внимание к деталям</h3></li>
-                <li><p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
-            </ul>
-            <ul>
-                <li><img src="./image/clock1.svg" alt="часы"></li>
-                <li><h3 class="title">Пунктуальность</h3></li>
-                <li><p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-            </ul>
-            <ul>
-                <li><img src="./image/diagram1.svg" alt="диаграмма"></li>
-                <li><h3 class="title">Планирование</h3></li>
-                <li><p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-            </ul>
-            <ul>
-                <li><img src="./image/astronaut1.svg" alt="астронавт"></li>
-                <li><h3 class="title">Современные технологии</h3></li>
-                <li><p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
-            </ul>
+            <div class="container">
+                <h2 class="features-title">Особенности</h2>
+                <ul class="features-item">
+                    <li><img src="./image/antenna1.svg" alt="антена"></li>
+                    <li><h3 class="title">Внимание к деталям</h3></li>
+                    <li><p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+                </ul>
+                <ul class="features-item">
+                    <li><img src="./image/clock1.svg" alt="часы"></li>
+                    <li><h3 class="title">Пунктуальность</h3></li>
+                    <li><p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+                </ul>
+                <ul class="features-item">
+                    <li><img src="./image/diagram1.svg" alt="диаграмма"></li>
+                    <li><h3 class="title">Планирование</h3></li>
+                    <li><p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+                </ul>
+                <ul class="features-item">
+                    <li><img src="./image/astronaut1.svg" alt="астронавт"></li>
+                    <li><h3 class="title">Современные технологии</h3></li>
+                    <li><p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+                </ul>
+            </div>
         </section>
         <!--секция 2 - чем мы занимаемся-->
         <section>
