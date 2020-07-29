@@ -16,6 +16,8 @@ html {
     --logo-color: #000000;
     --background-color: #ffffff;
     --background-secondary-color: #f5f4fa;
+    --background-third-color: rgba(47, 48, 58, 0.8);
+    --background-footer: #2F303A;
     }
 
 body {
@@ -51,6 +53,9 @@ body {
 
 .logo-web {
     color: var(--accent-color);
+}
+.logo-studio {
+    color: var(--white-text-color);
 }
 
 /* навигация сайта */
@@ -164,6 +169,8 @@ body {
 }
 .features-item img {
     margin-bottom: 30px;
+    background-color: var(--background-secondary-color);
+    padding: 25px 100px;
 }
 
 .features .title {
@@ -189,16 +196,24 @@ margin-bottom: 0;
 
 /* чем мы занимаемся */
 .work-list {
+    /* display: inline-block; */
+    width: 370px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .work-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.17px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 376px;
+    outline: 1px solid green;
 }
 
 .work-list a {
@@ -209,11 +224,18 @@ margin-bottom: 0;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: var(--white-text-color);
+    background-color: var(--background-third-color);
+    padding: 27px 82px 27px 83px;
 
 }
 
 /* наша команда */
+.team {
+    width: 1600px;
+    background-color: var(--background-secondary-color);
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -221,29 +243,58 @@ margin-bottom: 0;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .team-list {
+    display: inline-block;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-list .description {
+    width: 270px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.team-list .description a {
+    text-decoration: none;
+}
+.team-list .description img {
+    padding: 12px;
+    margin-right: 10px;
 }
 
 .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: left;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);  
+    margin-top: 0;
+    margin-bottom: 10px;  
 }
 
 .position {
     font-size: 16px;
     line-height: 1.19px;
-    text-align: left;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 /* постоянные клиенты */
+.clients {
+    padding: 94px 215px;
+    width: 1600px;
+}
+.container-clients {
+    width: 1200px;
+}
 .clients-title {
     font-weight: 700;
     font-size: 36px;
@@ -251,18 +302,45 @@ margin-bottom: 0;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .client-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.rectangle {
+    display: inline-block;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    text-align: center;
 }
 
 /* подвал */
+.footer {
+    background-color:var(--background-footer);
+    width: 1600px;
+}
+
+.footer-address {
+    margin: 0;
+    width: 270px;
+}
+
+.network {
+    margin: 0;
+    width: 270px;
+}
 .address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-top: 20px;
 }
 .address a {
     text-decoration: none;
@@ -279,13 +357,23 @@ margin-bottom: 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-text-color);
-    background-color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 20;
 }
 
 .network-links {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+.network-links a {
+    text-decoration: none;
+}
+.network-links img {
+    padding: 12px;
+    margin-right: 10px;
+}
 /* главный контент портфолио */
 
 .filter {
