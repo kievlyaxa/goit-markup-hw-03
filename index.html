@@ -11,36 +11,40 @@
 <body>
     <!--шапка-->
     <header class="hat">
-        <div class="container">
-            <nav>
+        <div class="header flexbox">
+        <nav class="navigation">
+            <div class="hat-logo">
                 <a class="logo" href="./index.html"> 
                     <span class="logo-web" lang="en">Web</span> Studio
                 </a>
+            </div>
+            <!-- <div class="hat-link"> -->
                 <ul class="site-nav">
-                    <li><a class="site-nav-link current" href="./index.html">Студия</a></li>
+                    <li><a class="site-nav-link current " href="./index.html">Студия</a></li>
                     <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
                     <li><a class="site-nav-link" href="">Контакты</a></li>
                 </ul>
-            </nav>
+            <!-- </div> -->
+        </nav>
                 <ul class="contacts">
-                    <li class="contacts-list"><img src="./image/envelope(hover).svg" alt="конверт">
+                    <li class="contacts-mail"><img src="./image/envelope(hover).svg" alt="конверт">
                         <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contacts-list"><img src="./image/smartphone.svg" alt="смартфон">
+                    <li class="contacts-tel"><img src="./image/smartphone.svg" alt="смартфон">
                         <a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-        </div>
+        </div>    
     </header>
     <!--главный контент-->
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
-                <a class="button" href="">Заказать услугу</a>       
+                <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
+                <a class="hero-button" href="">Заказать услугу</a>       
             </div>
         </section>
         <!--секция 1 - наши особенности-->
-        <section class="features">
-            <div class="container">
+        <section class="section">
+            <div class="container features">
                 <h2 class="features-title">Особенности</h2>
                 <ul class="features-item">
                     <li><img src="./image/antenna1.svg" alt="антена"></li>
@@ -65,28 +69,28 @@
             </div>
         </section>
         <!--секция 2 - чем мы занимаемся-->
-        <section>
-            <div class="container">
+        <section class="section">
+            <div class="container work">
                 <h2 class="work-title">Чем мы занимаемся</h2>
-                <ul class="work-list">
-                    <li>
-                        <img src="./image/nout.jpg" alt="ноутбук">
-                        <a href="">Десктопные приложения</a>
-                    </li>
-                    <li>
-                        <img src="./image/smartphone.jpg" alt="смартфоны">
-                        <a href="">Мобильные приложения</a>
-                    </li>
-                    <li>
-                        <img src="./image/monitor.jpg" alt="монитор">
-                        <a href="">Дизайнерские решения</a>
-                    </li>   
-                </ul>
+                    <ul class="work-list">
+                        <li>                           
+                            <img src="./image/nout.jpg" alt="ноутбук">
+                            <a href="">Десктопные приложения</a>
+                        </li>
+                        <li>
+                            <img src="./image/smartphone.jpg" alt="смартфоны">
+                            <a href="">Мобильные приложения</a>
+                        </li>
+                        <li>
+                            <img src="./image/monitor.jpg" alt="монитор">
+                            <a href="">Дизайнерские решения</a>
+                        </li>   
+                    </ul>
             </div>
         </section>
         <!--секция 3 - наша команда-->
         <section class="team">
-            <div class="container">
+            <div class="container our-team">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                 <li>
@@ -168,7 +172,7 @@
         </section>
         <!--секция 4 - постоянные клиенты-->
         <section class="clients">
-            <div class="container-clients">
+            <div class="container clients">
                 <h2 class="clients-title">Постоянные клиенты</h2>
                 <ul class="client-list">
                     <li>
